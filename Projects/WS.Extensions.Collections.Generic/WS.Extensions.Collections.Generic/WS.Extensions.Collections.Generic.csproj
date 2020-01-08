@@ -7,7 +7,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Wagsn</Authors>
     <Company>Wagsn</Company>
-    <Version>0.1.0+build.3</Version>
+    <Version>0.1.1+build.3</Version>
     <PackageReleaseNotes>Extensions For System.Collections.Generic</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
