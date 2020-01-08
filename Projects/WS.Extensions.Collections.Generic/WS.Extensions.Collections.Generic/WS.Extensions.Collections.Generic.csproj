@@ -10,6 +10,8 @@
     <Version>0.1.1+build.3</Version>
     <PackageReleaseNotes>Extensions For System.Collections.Generic</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright © Wagsn</Copyright>
+    <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp/tree/master/Projects/WS.Extensions.Collections.Generic</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
