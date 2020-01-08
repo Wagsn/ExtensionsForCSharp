@@ -5,14 +5,16 @@
     <Authors>Wagsn</Authors>
     <Description>WS.Extensions.FileProviders.Physical
 Version Description
+  0.1.1
+    Degraded dependency version
   0.1.0
     Add GetDirectoryDepthContents(subpath:string) Enumerate a directory at the given path, if any. And contains depth subpath.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp/tree/master/Projects/WS.Extensions.FileProviders.Physical</PackageProjectUrl>
     <PackageIconUrl>https://avatars1.githubusercontent.com/u/33355908?s=40&amp;v=4</PackageIconUrl>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageReleaseNotes>Add GetDirectoryDepthContents(subpath:string) Enumerate a directory at the given path, if any. And contains depth subpath.</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
     <Copyright>Copyright © Wagsn</Copyright>
   </PropertyGroup>
 
