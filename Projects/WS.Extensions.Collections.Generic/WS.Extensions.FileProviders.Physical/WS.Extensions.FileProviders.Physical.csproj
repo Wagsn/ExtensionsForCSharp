@@ -3,19 +3,25 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Wagsn</Authors>
-    <Description>WS.Extensions.FileProviders.Physical
-Version Description
-  0.1.1
-    Degraded dependency version
-  0.1.0
-    Add GetDirectoryDepthContents(subpath:string) Enumerate a directory at the given path, if any. And contains depth subpath.</Description>
+    <Description>
+      Microsoft.Extensions.FileProviders.Physical Extension
+      Version Description
+        0.1.2 IconUrl to pakageIcon
+        0.1.1
+          Degraded dependency version
+        0.1.0
+          Add GetDirectoryDepthContents(subpath:string) Enumerate a directory at the given path, if any. And contains depth subpath.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp/tree/master/Projects/WS.Extensions.FileProviders.Physical</PackageProjectUrl>
-    <PackageIconUrl>icon.png</PackageIconUrl>
-    <Version>0.1.1</Version>
+    <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp</PackageProjectUrl>
+    <!--<PackageIconUrl>https://raw.githubusercontent.com/Wagsn/ExtensionsForCSharp/master/Projects/WS.Extensions.Collections.Generic/WS.Extensions.FileProviders.Physical/images/icon.png</PackageIconUrl>-->
+    <PackageIcon>icon.png</PackageIcon>
+    <Version>0.1.2</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Copyright>Copyright © Wagsn</Copyright>
+    <RepositoryUrl>https://github.com/Wagsn/ExtensionsForCSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>PhysicalFileProvider;</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
