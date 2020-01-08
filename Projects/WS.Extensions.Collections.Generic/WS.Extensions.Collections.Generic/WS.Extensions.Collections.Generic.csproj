@@ -12,6 +12,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>Copyright © Wagsn</Copyright>
     <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp/tree/master/Projects/WS.Extensions.Collections.Generic</PackageProjectUrl>
+    <PackageIconUrl>https://avatars1.githubusercontent.com/u/33355908?s=40&amp;v=4</PackageIconUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
