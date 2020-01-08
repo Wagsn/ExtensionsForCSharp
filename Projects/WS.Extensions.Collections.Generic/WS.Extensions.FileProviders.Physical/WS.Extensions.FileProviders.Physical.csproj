@@ -11,7 +11,7 @@ Version Description
     Add GetDirectoryDepthContents(subpath:string) Enumerate a directory at the given path, if any. And contains depth subpath.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp/tree/master/Projects/WS.Extensions.FileProviders.Physical</PackageProjectUrl>
-    <PackageIconUrl>https://avatars1.githubusercontent.com/u/33355908?s=40&amp;v=4</PackageIconUrl>
+    <PackageIconUrl>icon.png</PackageIconUrl>
     <Version>0.1.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReleaseNotes></PackageReleaseNotes>
@@ -20,6 +20,10 @@ Version Description
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="images\icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
