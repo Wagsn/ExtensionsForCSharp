@@ -3,14 +3,27 @@
   <PropertyGroup>
     <!--   -->
     <!--<TargetFramework>netstandard2.0</TargetFramework>-->
-    <TargetFrameworks>netstandard2.0;netstandard2.0;netstandard1.0;net35;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;netstandard1.0;net35;</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Wagsn</Authors>
     <Company>Wagsn</Company>
+    <Version>0.1.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
-    <DocumentationFile>.\WS.Extensions.Collections.Generic.xml</DocumentationFile>
+    <DocumentationFile>.\bin\Debug\netstandard2.0\WS.Extensions.Collections.Generic.xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
+    <DocumentationFile>.\bin\Debug\netstandard2.1\WS.Extensions.Collections.Generic.xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard1.0|AnyCPU'">
+    <DocumentationFile>.\bin\Debug\netstandard1.0\WS.Extensions.Collections.Generic.xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net35|AnyCPU'">
+    <DocumentationFile>.\bin\Debug\net35\WS.Extensions.Collections.Generic.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
