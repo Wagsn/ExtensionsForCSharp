@@ -7,12 +7,15 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Wagsn</Authors>
     <Company>Wagsn</Company>
+    <!-- major.minor.patch.build -->
     <Version>0.1.1+build.3</Version>
     <PackageReleaseNotes>Extensions For System.Collections.Generic</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
     <Copyright>Copyright © Wagsn</Copyright>
-    <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp/tree/master/Projects/WS.Extensions.Collections.Generic</PackageProjectUrl>
-    <PackageIconUrl>https://avatars1.githubusercontent.com/u/33355908?s=40&amp;v=4</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Wagsn/ExtensionsForCSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
@@ -30,5 +33,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net35|AnyCPU'">
     <DocumentationFile>.\bin\Debug\net35\WS.Extensions.Collections.Generic.xml</DocumentationFile>
   </PropertyGroup>-->
+
+  <ItemGroup>
+    <None Include="images\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>
