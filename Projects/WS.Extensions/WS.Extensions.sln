@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.Extensions.Collections.Generic", "WS.Extensions.Collections.Generic\WS.Extensions.Collections.Generic.csproj", "{1059B52E-9E76-4290-A579-41C30A99DC2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS.Extensions.FileProviders.Physical", "WS.Extensions.FileProviders.Physical\WS.Extensions.FileProviders.Physical.csproj", "{9A62B78A-4641-4D43-9C24-2609CF57190A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.Extensions.FileProviders.Physical", "WS.Extensions.FileProviders.Physical\WS.Extensions.FileProviders.Physical.csproj", "{9A62B78A-4641-4D43-9C24-2609CF57190A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhysicalFolderWatcherDemo", "PhysicalFolderWatcherDemo\PhysicalFolderWatcherDemo.csproj", "{AE8F0E11-35F8-4E5B-A865-B3FE9153A1CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9A62B78A-4641-4D43-9C24-2609CF57190A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A62B78A-4641-4D43-9C24-2609CF57190A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A62B78A-4641-4D43-9C24-2609CF57190A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE8F0E11-35F8-4E5B-A865-B3FE9153A1CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8F0E11-35F8-4E5B-A865-B3FE9153A1CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8F0E11-35F8-4E5B-A865-B3FE9153A1CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8F0E11-35F8-4E5B-A865-B3FE9153A1CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

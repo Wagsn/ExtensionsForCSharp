@@ -1,9 +1,10 @@
-﻿using Microsoft.Extensions.Primitives;
+﻿using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Primitives;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Microsoft.Extensions.FileProviders
+namespace WS.Extensions.FileProviders.Physical
 {
     /// <summary>
     /// Subfolder content change listener
@@ -38,7 +39,7 @@ namespace Microsoft.Extensions.FileProviders
         {
             FileProvider = new PhysicalFileProvider(rootPath);
             // 递归查询所有子文件
-            Files.AddRange(FileProvider.GetDirectoryContents("").Where(f => !f.IsDirectory));
+            Files.AddRange(FileProvider.GetDirectoryDepthContents("").Where(f => !f.IsDirectory));
             // 监听监听所有文件，当文件发生修改时反应为某个子文件夹的修改，在最后将修改的文件夹路径打印出来
             ChangeToken.OnChange(() => FileProvider.Watch("*"), () =>  // filter Example: **/*.cs, *.*, subFolder/**/*.cshtml.
             {
