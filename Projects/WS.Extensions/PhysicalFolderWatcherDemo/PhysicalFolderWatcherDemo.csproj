@@ -8,10 +8,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="3.0.0" />
     <PackageReference Include="WS.Extensions.Collections.Generic" Version="0.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\WS.Extensions.FileProviders.Physical\WS.Extensions.FileProviders.Physical.csproj" />
+    <PackageReference Include="WS.Extensions.FileProviders.Physical" Version="0.2.1" />
   </ItemGroup>
 
 </Project>
