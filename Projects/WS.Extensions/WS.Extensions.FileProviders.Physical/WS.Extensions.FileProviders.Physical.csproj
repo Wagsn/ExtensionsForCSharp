@@ -6,13 +6,11 @@
     <Description>
       Microsoft.Extensions.FileProviders.Physical Extension
       Version Description
-        0.2.0+build.4
-          Add SubfolderChangeWatcher, 
+        0.2.0+build.4 Add SubfolderChangeWatcher,
         0.1.2 IconUrl to pakageIcon
-        0.1.1
-          Degraded dependency version
-        0.1.0
-          Add GetDirectoryDepthContents(subpath:string) Enumerate a directory at the given path, if any. And contains depth subpath.</Description>
+        0.1.1 Degraded dependency version
+        0.1.0 Add GetDirectoryDepthContents(subpath:string) Enumerate a directory at the given path, if any. And contains depth subpath.
+    </Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp</PackageProjectUrl>
     <!--<PackageIconUrl>https://raw.githubusercontent.com/Wagsn/ExtensionsForCSharp/master/Projects/WS.Extensions.Collections.Generic/WS.Extensions.FileProviders.Physical/images/icon.png</PackageIconUrl>-->
