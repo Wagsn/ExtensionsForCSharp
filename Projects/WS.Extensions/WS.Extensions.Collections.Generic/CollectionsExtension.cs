@@ -19,5 +19,9 @@
                 list.Add(item);
             }
         }
+        public static T Reduce<T>(IEnumerable<T> source)
+        {
+            return default(T);
+        }
     }
 }
