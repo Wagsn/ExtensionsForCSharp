@@ -8,6 +8,12 @@ namespace Microsoft.Extensions.FileProviders
     /// </summary>
     public static class PhysicalFileProviderExtension
     {
+        /// <summary>
+        /// Get Directory Depth Contents
+        /// </summary>
+        /// <param name="fileProvider">Physical File Provider</param>
+        /// <param name="subpath">Subpath</param>
+        /// <returns>Get depth file or directory path for subpath.</returns>
         public static IEnumerable<IFileInfo> GetDirectoryDepthContents(this PhysicalFileProvider fileProvider, string subpath)
         {
             var rootPath = fileProvider.Root;

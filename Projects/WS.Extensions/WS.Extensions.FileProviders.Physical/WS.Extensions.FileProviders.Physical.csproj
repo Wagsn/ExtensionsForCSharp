@@ -3,9 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Wagsn</Authors>
-    <Description>
-Microsoft.Extensions.FileProviders.Physical Extension
+    <Description>Microsoft.Extensions.FileProviders.Physical Extension
 Version Description
+  0.2.2 upgrade pakage.
   0.2.1 Fix bug for SubfolderChangeWatcher.
   0.2.0+build.4 Add SubfolderChangeWatcher.
   0.1.2 IconUrl to pakageIcon
@@ -16,7 +16,7 @@ Version Description
     <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
     <!-- major.minor.patch-preview+build -->
-    <Version>0.2.1</Version>
+    <Version>0.2.2</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Copyright>Copyright © Wagsn</Copyright>
@@ -31,7 +31,7 @@ Version Description
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="3.0.0" />
-    <PackageReference Include="WS.Extensions.Collections.Generic" Version="0.1.1" />
+    <PackageReference Include="WS.Extensions.Collections.Generic" Version="1.0.1" />
   </ItemGroup>
 
   <ItemGroup>

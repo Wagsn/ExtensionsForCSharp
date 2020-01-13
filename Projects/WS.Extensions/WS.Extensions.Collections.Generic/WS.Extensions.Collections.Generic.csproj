@@ -8,7 +8,7 @@
     <Authors>Wagsn</Authors>
     <Company>Wagsn</Company>
     <!-- major.minor.patch.build -->
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <PackageReleaseNotes>Extensions For System.Collections.Generic</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
@@ -16,11 +16,13 @@
     <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Wagsn/ExtensionsForCSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Description>System.Collections.Generic Extension
+    <Description>System.Collections.Generic Extension, Follow Semantic Versioning 2.0.0
 Version Description
+  1.0.1 fix Reduce for not exist any element, and add Tag reduce.
   1.0.0 add reduce func for IEnumerable
   0.1.1+build.3 Add PackageIcon.
     </Description>
+    <PackageTags>reduce;</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">

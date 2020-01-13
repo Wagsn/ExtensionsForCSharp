@@ -23,15 +23,15 @@ namespace System.Collections.Generic
         }
 
         /// <summary>
-        /// [x1, x2, x3, x4].Reduce(f) = f(f(f(x1, x2), x3), x4)
+        /// [x1, x2, x3, x4].Reduce(f) = f(f(f(x1, x2), x3), x4).
         /// </summary>
-        /// <typeparam name="T">The element type</typeparam>
-        /// <param name="source">Source IEnumerable</param>
-        /// <param name="merge">Merge expression</param>
-        /// <returns></returns>
+        /// <typeparam name="T">The element type.</typeparam>
+        /// <param name="source">Source IEnumerable.</param>
+        /// <param name="merge">Merge expression.</param>
+        /// <returns>return default if source is null or not exist any element.</returns>
         public static T Reduce<T>(IEnumerable<T> source, Func<T,T,T> merge)
         {
-            if(source== null) return default(T);
+            if(source== null || !source.Any()) return default(T);
             var result = source.First();
             foreach (var item in source.Skip(0))
             {

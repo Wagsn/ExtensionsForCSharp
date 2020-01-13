@@ -20,7 +20,7 @@ namespace WS.Extensions.FileProviders.Physical
         /// </summary>
         private PhysicalFileProvider FileProvider { get; set; }
         /// <summary>
-        /// Listen for changes in subfolders
+        /// Listen for changes of subfolders content.
         /// </summary>
         /// <param name="rootPath">Watching Root Path</param>
         /// <param name="onChange">Callback when change</param>
