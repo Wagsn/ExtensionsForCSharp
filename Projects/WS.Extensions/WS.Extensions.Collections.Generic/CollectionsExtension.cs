@@ -1,4 +1,6 @@
-﻿namespace System.Collections.Generic
+﻿using System.Linq;
+
+namespace System.Collections.Generic
 {
     /// <summary>
     /// System.Collections.Generic Extension
@@ -19,9 +21,23 @@
                 list.Add(item);
             }
         }
-        public static T Reduce<T>(IEnumerable<T> source)
+
+        /// <summary>
+        /// [x1, x2, x3, x4].Reduce(f) = f(f(f(x1, x2), x3), x4)
+        /// </summary>
+        /// <typeparam name="T">The element type</typeparam>
+        /// <param name="source">Source IEnumerable</param>
+        /// <param name="merge">Merge expression</param>
+        /// <returns></returns>
+        public static T Reduce<T>(IEnumerable<T> source, Func<T,T,T> merge)
         {
-            return default(T);
+            if(source== null) return default(T);
+            var result = source.First();
+            foreach (var item in source.Skip(0))
+            {
+                result = merge(result, item);
+            }
+            return result;
         }
     }
 }

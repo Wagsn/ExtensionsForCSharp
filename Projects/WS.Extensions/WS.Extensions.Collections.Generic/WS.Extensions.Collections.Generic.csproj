@@ -8,7 +8,7 @@
     <Authors>Wagsn</Authors>
     <Company>Wagsn</Company>
     <!-- major.minor.patch.build -->
-    <Version>0.1.1+build.3</Version>
+    <Version>1.0.0</Version>
     <PackageReleaseNotes>Extensions For System.Collections.Generic</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
@@ -16,10 +16,10 @@
     <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Wagsn/ExtensionsForCSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Description>
-      System.Collections.Generic Extension
-      Version Description
-        0.1.1+build.3 Add PackageIcon.
+    <Description>System.Collections.Generic Extension
+Version Description
+  1.0.0 add reduce func for IEnumerable
+  0.1.1+build.3 Add PackageIcon.
     </Description>
   </PropertyGroup>
 
