@@ -39,5 +39,18 @@ namespace System.Collections.Generic
             }
             return result;
         }
+
+        /// <summary>
+        /// Paging query
+        /// </summary>
+        /// <typeparam name="T">The element type.</typeparam>
+        /// <param name="source">Source IEnumerable.</param>
+        /// <param name="size">Size of page.</param>
+        /// <param name="index">index of page.</param>
+        /// <returns>source.Skip(index * size).Take(size);</returns>
+        public static IEnumerable<T> Page<T>(IEnumerable<T> source, int size, int index = 0)
+        {
+            return source.Skip(index * size).Take(size);
+        }
     }
 }

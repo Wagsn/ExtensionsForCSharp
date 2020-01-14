@@ -8,7 +8,7 @@
     <Authors>Wagsn</Authors>
     <Company>Wagsn</Company>
     <!-- major.minor.patch.build -->
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <PackageReleaseNotes>Extensions For System.Collections.Generic</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
@@ -18,9 +18,9 @@
     <RepositoryType>git</RepositoryType>
     <Description>System.Collections.Generic Extension, Follow Semantic Versioning 2.0.0
 Version Description
-  1.0.1 fix Reduce for not exist any element, and add Tag reduce.
-  1.0.0 add reduce func for IEnumerable
-  0.1.1+build.3 Add PackageIcon.
+  1.1.0 Add Page function for IEnumerable.
+  1.0.0 Add Reduce function for IEnumerable.
+  0.x Add Refresh function for IList.
     </Description>
     <PackageTags>reduce;</PackageTags>
   </PropertyGroup>
