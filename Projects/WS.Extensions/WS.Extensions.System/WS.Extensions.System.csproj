@@ -13,13 +13,17 @@ Version Description
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Copyright>Copyright © Wagsn</Copyright>
     <RepositoryUrl>https://github.com/Wagsn/ExtensionsForCSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>system;string;</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\bin\Debug\netstandard2.0\WS.Extensions.System.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
