@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <Authors>Wagsn</Authors>
+    <Description>System Extension
+Version Description
+0.1.0 Add ToArabicNumeral():string and ReplaceByRegex(pattern:string, replacement:string):string for String.
+</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <Version>0.1.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Copyright>Copyright © Wagsn</Copyright>
+    <RepositoryUrl>https://github.com/Wagsn/ExtensionsForCSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>system;string;</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="images\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

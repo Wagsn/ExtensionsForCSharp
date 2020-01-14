@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.Extensions.FileProviders
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhysicalFolderWatcherDemo", "PhysicalFolderWatcherDemo\PhysicalFolderWatcherDemo.csproj", "{AE8F0E11-35F8-4E5B-A865-B3FE9153A1CD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WS.Extensions.System", "WS.Extensions.System\WS.Extensions.System.csproj", "{D35D59A0-EBF5-4B73-A4F5-8934F413DE79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AE8F0E11-35F8-4E5B-A865-B3FE9153A1CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE8F0E11-35F8-4E5B-A865-B3FE9153A1CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE8F0E11-35F8-4E5B-A865-B3FE9153A1CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35D59A0-EBF5-4B73-A4F5-8934F413DE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35D59A0-EBF5-4B73-A4F5-8934F413DE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35D59A0-EBF5-4B73-A4F5-8934F413DE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35D59A0-EBF5-4B73-A4F5-8934F413DE79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
