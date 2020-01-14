@@ -62,6 +62,7 @@ namespace System
             var res = string.Join("", numStrs);
             res = Regex.Replace(res, "零[载正涧沟穰姊垓京兆亿万千百十]", "零");
             res = Regex.Replace(res, "零+", "零");
+            // TODO "250" -> "二百五十零" 去掉末尾的零，去掉连续的最后一个单位："二百五十"->"二百五","三千六百"->"三千六"
             return res;
         }
 
