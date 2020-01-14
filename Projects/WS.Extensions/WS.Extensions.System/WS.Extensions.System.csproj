@@ -6,20 +6,22 @@
     <OutputType>Library</OutputType>
     <StartupObject />
     <Authors>Wagsn</Authors>
-    <Description>System Extension
+    <Description>System Extension, Chinese numeric string to Arabic numeric string.
 Version Description
+0.2.0 Add ToChinese():string for int and long.
 0.1.0 Add ToArabicNumeral():string and ReplaceByRegex(pattern:string, replacement:string):string for String.
+0.2.0 Add ToChinese
 </Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Wagsn/ExtensionsForCSharp</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
-    <Version>0.1.1</Version>
+    <Version>0.2.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Copyright>Copyright © Wagsn</Copyright>
     <RepositoryUrl>https://github.com/Wagsn/ExtensionsForCSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>system;string;</PackageTags>
+    <PackageTags>system;string;convert;</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

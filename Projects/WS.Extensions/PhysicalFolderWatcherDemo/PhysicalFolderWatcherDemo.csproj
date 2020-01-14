@@ -11,4 +11,8 @@
     <PackageReference Include="WS.Extensions.FileProviders.Physical" Version="0.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WS.Extensions.System\WS.Extensions.System.csproj" />
+  </ItemGroup>
+
 </Project>

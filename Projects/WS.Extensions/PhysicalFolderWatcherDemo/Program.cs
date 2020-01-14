@@ -10,6 +10,11 @@ namespace PhysicalFolderWatcherDemo
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(long.MaxValue.ToChinese());
+        }
+
+        static void Watch()
+        {
             var pluginDir = Path.Combine(AppContext.BaseDirectory, "Plugins");
             if (!Directory.Exists(pluginDir)) Directory.CreateDirectory(pluginDir);
             if (!Directory.Exists(Path.Combine(pluginDir, "WS.EmailSender"))) Directory.CreateDirectory(Path.Combine(pluginDir, "WS.EmailSender"));
