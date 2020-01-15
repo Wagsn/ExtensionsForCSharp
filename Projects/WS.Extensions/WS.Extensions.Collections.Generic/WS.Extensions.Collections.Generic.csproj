@@ -8,7 +8,7 @@
     <Authors>Wagsn</Authors>
     <Company>Wagsn</Company>
     <!-- major.minor.patch.build -->
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <PackageReleaseNotes>Extensions For System.Collections.Generic</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>

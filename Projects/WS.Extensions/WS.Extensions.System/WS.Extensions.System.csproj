@@ -33,7 +33,7 @@ Version Description
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="WS.Extensions.Collections.Generic" Version="1.1.0" />
+    <PackageReference Include="WS.Extensions.Collections.Generic" Version="1.1.1" />
   </ItemGroup>
 
 </Project>

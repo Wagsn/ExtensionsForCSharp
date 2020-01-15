@@ -33,7 +33,7 @@ namespace System.Collections.Generic
         {
             if(source== null || !source.Any()) return default(T);
             var result = source.First();
-            foreach (var item in source.Skip(0))
+            foreach (var item in source.Skip(1))
             {
                 result = merge(result, item);
             }

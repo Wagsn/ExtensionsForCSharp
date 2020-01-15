@@ -38,13 +38,14 @@ namespace System
                 numStrs.Add(numStr.Substring(i - 4, 4));
             }
             var index = -1;
-            numStrs = numStrs.Select(full =>
+            var res = numStrs.Select(full =>
             {
                 index++;
                 return $"{hanzi[full[0] - 48]}千{hanzi[full[1] - 48]}百{hanzi[full[2] - 48]}十{hanzi[full[3] - 48]}{units[index]}";
-            }).ToList();
-            numStrs.Reverse();
-            var res = string.Join("", numStrs);
+            }).ToList().Reduce((left, right) =>
+            {
+                return right + left;
+            });
             // "三千零百零十零" -> "三千零零十零"
             res = Regex.Replace(res, "零[载正涧沟穰姊垓京兆亿万千百十]", "零");
             // "三千零零十零" -> "三千零十零"
