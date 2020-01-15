@@ -24,7 +24,7 @@ namespace System
         }
 
         // 载正涧沟穰姊垓京兆亿万千百十 零一二三四五六七八九
-        private static string ToChinese(this string input)
+        private static string ToChinese(string input)
         {
             // 目标 "9123400000560" -> "九兆一千二百三十四亿零五百六"
             var numStr = input;
