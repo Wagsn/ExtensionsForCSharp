@@ -10,7 +10,9 @@ namespace PhysicalFolderWatcherDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(19.ToChinese());
+            Console.WriteLine($"{int.MaxValue} {int.MaxValue.ToChinese()}");
+            //Console.WriteLine($"{long.MaxValue} {long.MaxValue.ToChinese()}");
+            //Console.WriteLine($"{10} {10.ToChinese()}");
         }
 
         static void Watch()

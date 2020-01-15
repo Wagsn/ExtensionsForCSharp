@@ -29,8 +29,7 @@ namespace System
             // 目标 "9123400000560" -> "九兆一千二百三十四亿零五百六"
             var numStr = input;
             // "9123400000560" -> "0009123400000560"
-            var max = (int)Math.Ceiling((double)numStr.Length / 4);
-            numStr = numStr.PadLeft(max*4, '0');
+            numStr = numStr.PadLeft((int)Math.Ceiling((double)numStr.Length / 4) * 4, '0');
             // 按四位分割成 {"0560","0000","1234","0009"}
             var numStrs = new List<string>();
             for (int i = numStr.Length; i > 0; i -= 4)
@@ -38,7 +37,7 @@ namespace System
                 numStrs.Add(numStr.Substring(i - 4, 4));
             }
             var index = -1;
-            var res = numStrs.Select(full =>
+            var res = numStrs.Select(full =>  // 注：Select里面的代码不会立即执行，只有调用First和ToList这些方法的使用才会执行，但是每次调用里面的代码都会执行一遍
             {
                 index++;
                 return $"{hanzi[full[0] - 48]}千{hanzi[full[1] - 48]}百{hanzi[full[2] - 48]}十{hanzi[full[3] - 48]}{units[index]}";
