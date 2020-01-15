@@ -8,7 +8,7 @@
     <Authors>Wagsn</Authors>
     <Company>Wagsn</Company>
     <!-- major.minor.patch.build -->
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <PackageReleaseNotes>Extensions For System.Collections.Generic</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
@@ -22,7 +22,7 @@ Version Description
   1.0.0 Add Reduce function for IEnumerable.
   0.x Add Refresh function for IList.
     </Description>
-    <PackageTags>reduce;</PackageTags>
+    <PackageTags>Wagsn;reduce;</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">

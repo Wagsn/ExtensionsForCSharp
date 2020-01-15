@@ -20,49 +20,41 @@ namespace System
         /// <returns>中文数值字符串</returns>
         public static string ToChinese(this long input)
         {
-            // "9123400000560" -> "九兆一千二百三十四亿零五百六"
-            var numStr =  input.ToString();
-            // 按四位分割成 {"0560","0000","1234","9"}
+            return ToChinese(input.ToString());
+        }
+
+        // 载正涧沟穰姊垓京兆亿万千百十 零一二三四五六七八九
+        private static string ToChinese(this string input)
+        {
+            // 目标 "9123400000560" -> "九兆一千二百三十四亿零五百六"
+            var numStr = input;
+            // "9123400000560" -> "0009123400000560"
+            var max = (int)Math.Ceiling((double)numStr.Length / 4);
+            numStr = numStr.PadLeft(max*4, '0');
+            // 按四位分割成 {"0560","0000","1234","0009"}
             var numStrs = new List<string>();
-            for(int i = numStr.Length - 1; i > -1; i-=4)
+            for (int i = numStr.Length; i > 0; i -= 4)
             {
-                if(i < 4)
-                {
-                    numStrs.Add(numStr.Substring(0, i + 1));
-                }
-                else
-                {
-                    numStrs.Add(numStr.Substring(i - 3, 4));
-                }
+                numStrs.Add(numStr.Substring(i - 4, 4));
             }
             var index = -1;
-            numStrs = numStrs.Select(a => 
+            numStrs = numStrs.Select(full =>
             {
-                var temp = "";
                 index++;
-                if (a.Length > 0)
-                {
-                    temp = $"{hanzi[(a[a.Length - 1] - 48)]}";
-                }
-                if (a.Length > 1)
-                {
-                    temp = $"{hanzi[(a[a.Length - 2] - 48)]}十" + temp;
-                }
-                if (a.Length > 2)
-                {
-                    temp = $"{hanzi[(a[a.Length - 3] - 48)]}百" + temp;
-                }
-                if (a.Length > 3)
-                {
-                    temp = $"{hanzi[(a[a.Length - 4] - 48)]}千" + temp;
-                }
-                return temp+$"{units[index]}";
+                return $"{hanzi[full[0] - 48]}千{hanzi[full[1] - 48]}百{hanzi[full[2] - 48]}十{hanzi[full[3] - 48]}{units[index]}";
             }).ToList();
             numStrs.Reverse();
             var res = string.Join("", numStrs);
+            // "三千零百零十零" -> "三千零零十零"
             res = Regex.Replace(res, "零[载正涧沟穰姊垓京兆亿万千百十]", "零");
+            // "三千零零十零" -> "三千零十零"
             res = Regex.Replace(res, "零+", "零");
-            // TODO "250" -> "二百五十零" 去掉末尾的零，去掉连续的最后一个单位："二百五十"->"二百五","三千六百"->"三千六"
+            // 去掉末尾的零 "250" -> "二百五十零"
+            res = Regex.Replace(res, "(^零)|(零$)", "");
+            // 可选 去掉末尾连续单位的最后一个单位 "二百五十"->"二百五","三万六千"->"三万六"
+            res = Regex.Replace(res, "([载正涧沟穰姊垓京兆亿万千百])([一二三四五六七八九])([正涧沟穰姊垓京兆亿万千百十])$", "$1$2");
+            // 可选 去掉开头“一十”的“一” "一十九"->"十九" "一十九万"->"十九万"
+            res = Regex.Replace(res, "^一十", "十");
             return res;
         }
 
@@ -73,7 +65,7 @@ namespace System
         /// <returns></returns>
         public static string ToChinese(this int input)
         {
-            return ToChinese((long)input);
+            return ToChinese(input.ToString());
         }
     }
 }

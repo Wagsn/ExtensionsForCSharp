@@ -32,4 +32,8 @@ Version Description
     <None Include="images\icon.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="WS.Extensions.Collections.Generic" Version="1.1.0" />
+  </ItemGroup>
+
 </Project>

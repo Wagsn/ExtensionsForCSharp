@@ -29,7 +29,7 @@ namespace System.Collections.Generic
         /// <param name="source">Source IEnumerable.</param>
         /// <param name="merge">Merge expression.</param>
         /// <returns>return default if source is null or not exist any element.</returns>
-        public static T Reduce<T>(IEnumerable<T> source, Func<T,T,T> merge)
+        public static T Reduce<T>(this IEnumerable<T> source, Func<T,T,T> merge)
         {
             if(source== null || !source.Any()) return default(T);
             var result = source.First();
@@ -48,7 +48,7 @@ namespace System.Collections.Generic
         /// <param name="size">Size of page.</param>
         /// <param name="index">index of page.</param>
         /// <returns>source.Skip(index * size).Take(size);</returns>
-        public static IEnumerable<T> Page<T>(IEnumerable<T> source, int size, int index = 0)
+        public static IEnumerable<T> Page<T>(this IEnumerable<T> source, int size, int index = 0)
         {
             return source.Skip(index * size).Take(size);
         }
