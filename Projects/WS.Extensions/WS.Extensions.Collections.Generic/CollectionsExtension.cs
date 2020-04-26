@@ -52,5 +52,10 @@ namespace System.Collections.Generic
         {
             return source.Skip(index * size).Take(size);
         }
+
+        public static IEnumerable<T> Distinct<T>(this IEnumerable<T> source, Func<T,T,bool> comparer)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
